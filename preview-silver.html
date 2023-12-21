@@ -77,7 +77,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
               <h2>Preview (Silver)</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p>Please see the specifications, and if you are interested. just pay straight away</p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
             
-            <img src="assets/img/jmenteng1-preview-silver-hotel.png" class="img-fluid" alt="">
+            <img src="assets/img/jmenteng1-preview-silver-hotel.png" alt="" class="img-fluid">
             
           </div>
           <div class="col-lg-6 content order-last  order-lg-first">
@@ -115,141 +115,62 @@
             <ul>
               
               <li class="list-group-item d-flex justify-content-between">
+              
+            <form method="post" action="preview-silver.html" id="bookingForm">
+                <div class="col-md-12 form-group">
+
                 
-                <div class="col-md-6 form-group">
+                  <input type="text" name="price" id="price"  style="display: none;"/>
+
 
                   <h3 class="my-4 ">Check In:</h3>
-                  <input type="date" placeholder=" Choose Date" class="form-control" id="date" />
+                  <input type="date" name="checkin" placeholder=" Choose Date" class="form-control" id="datein" />
 
                   <h3 class="my-4 ">Check Out:</h3>
-                  <input type="date" placeholder=" Choose Date" class="form-control" id="date" />
+                  <input type="date" name="checkout" placeholder=" Choose Date" class="form-control" id="dateout" />
 
                   
                   <h3 class="my-4 ">Guest:</h3>
-                  <select class="custom-select d-block w-100 h-50" id="country" required>
+                  <!--<select class="custom-select d-block w-100 h-50" id="country" required>
                     <option value="">Choose</option>
                     <option>1 Person</option>
                     <option>2 Person</option>
-                    <option>3 Person</option>
-                  </select>
+                    <option>3 Person</option> 
+                </select>-->
+                    <input type="text" name="guest" id="country" class="form-control" placeholder="Masukkan Banyak Orang">
+
+                     <input type="text" name="namahotel" placeholder="" class="form-control" id="namahotel" style="display: none;" value="The Unknown Hotel" readonly/>
                   
                 </div>
+                <div class="col">
+                    <div id="result"></div>
+                    <div id="totalPrice"></div>
+                </div>
 
-                
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        
-        
-
-        
-          
-          
-
-          
-          
-          
-   
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-  
-        <div class="row justify-content-md-center">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Payment</h3>
-
-              <ul class="list-group mb-3">
-                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                  <div>
-                    <h6 class="my-0">Best Price</h6>
-                    <small class="text-muted">Price</small>
-                  </div>
-                  <span class="text-muted">Rp.200.000;</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between bg-light">
-                  <div>
-                    <h6 class="text-success">Voucher</h6>
-                    <small class="text-success">None</small>
-                  </div>
-                  <span class="text-success">Rp.0;</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                  <div>
-                    <h6 class="my-0">Price After Discount</h6>
-                    <small class="text-muted">Price</small>
-                  </div>
-                  <span class="text-muted">Rp.200.000;</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                  <div>
-                    <h6 class="my-0">NServices Tax</h6>
-                    <small class="text-muted">Price</small>
-                  </div>
-                  <span class="text-muted">Rp.20.000;</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                  <h6 class="my-0">Payment Methode</h6>
-
-                  <div class="col-md-4">
-                    
-                    <select class="custom-select d-block w-100" id="country" required>
-                      <option value="">Choose</option>
-                      <option>Debit</option>
-                      <option>Kredit</option>
-                      <option>Dana</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid country.
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <p>Total:</p>
-              <h4><sup>Rp</sup>220<span>Ribu</span></h4>
-              
-            </div>
-          </div><!-- End Pricing Item -->
-        </div>
-  
-      </div>
-    </section><!-- End Pricing Section -->
-
-    
-    
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" >
-
-        
+        <div class="container" >
 
         <hr class="mb-4">
         <div class="row gy-4 mt-4">
 
-          <div class="col-lg-12">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
+         <div class="col-lg-12">
+              
+            <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="nama awal" placeholder="First Name" required>
+                  <input type="text" name="firstname" class="form-control" id="nama awal" placeholder="First Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="text" class="form-control" name="email" id="nama akhir" placeholder="Last Name" required>
+                  <input type="text" class="form-control" name="lastname" id="nama akhir" placeholder="Last Name" required>
                 </div>
               </div>
 
+
+
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="email" name="name" class="form-control" id="email" placeholder="Email" required>
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="text" class="form-control" name="email" id="number" placeholder="Phone Number" required>
+                  <input type="text" class="form-control" name="phonenumber" id="number" placeholder="Phone Number" required>
                 </div>
               </div>
 
@@ -263,27 +184,71 @@
               <hr class="mb-4">
             
               <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="text-center"><button type="submit" name="booking">Booking Now</button></div>
               </div>
-              <div class="text-center"><button type="submit">Booking Now</button></div>
-            </form>
-            
-          </div><!-- End Contact Form -->
+
 
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+            </form>
+
+        
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+
+       <script>
+        // Mendapatkan referensi elemen formulir dan elemen hasil
+        var bookingForm = document.getElementById('bookingForm');
+        var resultContainer = document.getElementById('result');
+
+        // Menambahkan event listener untuk setiap perubahan pada formulir
+        bookingForm.addEventListener('input', function () {
+            calculateTotalPrice();
+        });
+
+        function calculateTotalPrice() {
+            var checkinDate = document.getElementById('datein').value;
+            var checkoutDate = document.getElementById('dateout').value;
+            var guestCount = document.getElementById('country').value;
+
+            // Hitung selisih hari
+            var startDate = new Date(checkinDate);
+            var endDate = new Date(checkoutDate);
+            var duration = (endDate - startDate) / (1000 * 60 * 60 * 24);
+
+            // Harga per malam (misalnya, 100 ribu)
+            var pricePerNight = 200000;
+
+            // Harga tambahan per tamu (misalnya, 50 ribu per tamu)
+            var additionalPricePerGuest = 50000;
+
+            // Hitung total harga
+            var totalPrice = (pricePerNight * duration) + (additionalPricePerGuest * guestCount);
+
+            // Tampilkan hasil
+            resultContainer.innerHTML = '<h3 class="my-4 ">Total Bayar: </h3>' +  totalPrice;
+
+            document.getElementById('price').value = totalPrice;
+        }   
+    </script>
+
+        
+    </section><!-- End About Us Section -->
+  
+    
+
+    
+    
+
+    <!-- ======= Contact Section ======= -->
+    
+      
 
   </main><!-- End #main -->
-
-    
-
-    
-
-    
 
     
 
@@ -308,6 +273,11 @@
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
+
+
+
+
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

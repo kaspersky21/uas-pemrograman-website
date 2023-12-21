@@ -176,13 +176,9 @@ include_once("link/fungsi.php");
           <div class="col-lg-6 text-right">
             <h4>Rp 650.000 - 900.000+/days</h4>
           </div>
-          <?php
-
-        
-
-          ?>
-          
-
+          <div class="text-center"><button type="submit" name="submit">
+            Book For Now
+          </button>
         </div>
       </div>
       <nav>
