@@ -38,7 +38,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <img src="assets/img/hotelhub-logo.png">
@@ -49,14 +49,14 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="packages.html">Package</a></li>
-          <li><a href="history.html">History</a></li>
+          <li><a href="index.php" >Home</a></li>
+          <li><a href="packages.php">Package</a></li>
+          <li><a href="history.php">History</a></li>
 
  
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.php">Contact</a></li>
 
-          <li><a class="login" href="login.html"class="active">Login</a></li>
+          <li><a class="login" href="login.php"class="active">Login</a></li>
           
 
         </ul>
@@ -75,7 +75,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-lg-6 text-center">
               <h2>Login</h2>
-              <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p>PLEASE LOG IN TO YOUR EXISTING ACCOUNT</p>
             </div>
           </div>
         </div>
@@ -98,10 +98,10 @@
 
           <div class="col-lg-5 quote-bg" style="background-image: url(assets/img/login-bg.png);"></div>
 
-          <div class="col-lg-7">
-            <form action="forms/quote.php" method="post" class="php-email-form">
+            <div class="col-lg-7">
+            <form method="post" action="login.php" class="php-email-form">
               <h2>Login</h2>
-              <p>Doesn’t have an account yet?<a href="#">  Sign Up</a></p>
+              <p>Doesnt have an account yet?<a href="signup.php">  Sign Up</a></p>
               <div class="row gy-4">
 
 
@@ -111,24 +111,24 @@
 
                 <div class="col-md-12">
                   <h4>Username</h4>
-                  <input type="text" name="name" class="form-control" placeholder="" required>
+                  <input type="text" name="username" id="username "class="form-control" placeholder="Masukan username" required>
                 </div>
 
                 <div class="col-md-12 ">
                   <h4>Password</h4>
-                  <input type="password" class="form-control" name="email" placeholder="" required>
+                  <input type="password"  name="password" id="password" class="form-control"  placeholder="Masukan Password" required>
                 </div>
 
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
-
-                  <button class="text-center">Login</button>
                   
-                  
+                  <button type="submit" name="masuk">Login</button>
                 </div>
+
+            </form> 
+
+         
+
                 <div class="buttons-container">
                   
                   
